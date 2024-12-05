@@ -27,9 +27,5 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/ldress/sample-plot"
 
-[tool.setuptools]
-packages = ["sampleplot"]
-include-package-data = true
-
-[tool.setuptools.entry-points.console_scripts]
+[project.scripts]
 sampleplot = "sampleplot.main:main"
