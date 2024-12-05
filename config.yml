@@ -1,4 +1,4 @@
-data_path: sample_data/data.csvv
+data_path: ../sample_data/data.csv
 plots:
   - line_plot
   - bar_plot
