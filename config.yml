@@ -1,0 +1,5 @@
+data_path: sample_data/data.csvv
+plots:
+  - line_plot
+  - bar_plot
+

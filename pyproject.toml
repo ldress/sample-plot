@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SamplePlot"
+version = "0.1.0"
+description = "A simple plotting tool that reads configurations from a YAML file."
+authors = [
+    { name = "Lauren Dresslere", email = "ldress@uw.edum" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "matplotlib",
+    "pandas",
+    "PyYAML",
+]
+keywords = ["plotting", "visualization", "yaml", "matplotlib"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/ldress/sample-plot"
+
+[tool.setuptools]
+packages = ["sampleplot"]
+include-package-data = true
+
+[tool.setuptools.entry-points.console_scripts]
+sampleplot = "sampleplot.main:main"
